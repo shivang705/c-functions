@@ -1,0 +1,20 @@
+Since the code must be compatible for two platforms, two '.mk' files are created. 
+One is 'sources_HOST.mk' which includes files compatible to the host system only.
+Other is 'sources_HOST.mk' which includes all files compatible to MSP432.
+The 'makefile' has been made generic which can accept both '.mk' files depending upon the platform.
+
+The commands to build for host system are:
+make PLATFORM=HOST
+make all PLATFORM=HOST
+make build PLATFORM=HOST
+make compile-all PLATFORM=HOST
+make clean PLATFORM=HOST
+
+The commands to build for MSP432 are:
+make PLATFORM=MSP432
+make all PLATFORM=MSP432
+make build PLATFORM=MSP432
+make compile-all PLATFORM=MSP432
+make clean PLATFORM=MSP432
+
+
