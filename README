@@ -1,3 +1,20 @@
+This whole project conssts of 3 sub projects:
+1) Statistics
+2) C1M2 - (Makefile with code compatible with host and MSP432)
+3) Course1
+
+The command to build Statistics for host system is:
+make PLATFORM=HOST FUNCTION=STATS VEBROSE=ENABLE
+
+The command to build C1M2 for host system is:
+make PLATFORM=HOST FUNCTION=C1M2 VEBROSE=ENABLE
+
+The command to build Course1 for host system is:
+make PLATFORM=HOST FUNCTION=COURSE1 VEBROSE=ENABLE
+
+
+
+
 Since the code must be compatible for two platforms, two '.mk' files are created. 
 One is 'sources_HOST.mk' which includes files compatible to the host system only.
 Other is 'sources_HOST.mk' which includes all files compatible to MSP432.

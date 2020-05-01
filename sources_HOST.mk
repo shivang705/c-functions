@@ -10,6 +10,8 @@
 #*****************************************************************************
 SRCS = src/main.c \
 	src/memory.c \
-	src/stats.c
+	src/stats.c \
+	src/data.c \
+	src/course1.c
 
 INCLUDES = -Iinclude/common
